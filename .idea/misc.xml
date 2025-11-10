@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
   <component name="Black">
     <option name="sdkName" value="Python 3.14" />
   </component>
+=======
+<<<<<<< HEAD
+  <component name="Black">
+    <option name="sdkName" value="Python 3.13 (Library_Mangement_System)" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.13 (Library_Mangement_System)" project-jdk-type="Python SDK" />
+=======
+>>>>>>> 47f89a9869dd7c6393b608e89cbc89dcce17dfc3
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.14" project-jdk-type="Python SDK" />
+>>>>>>> refs/remotes/origin/main
 </project>
