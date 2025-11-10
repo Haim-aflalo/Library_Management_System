@@ -14,9 +14,9 @@ class Library:
         self.users.append(user.name)
 
     @staticmethod
-    def borrow_book(user, book_isbn, book):
+    def borrow_book(user, book):
         if book.is_available:
-            user.append(book_isbn)
+            user.borrowed_books.append(book.book_isbn)
             book.is_available = False
         else:
             print("the book is already borrowed")
