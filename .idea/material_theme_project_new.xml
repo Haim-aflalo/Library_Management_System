@@ -3,7 +3,11 @@
   <component name="MaterialThemeProjectNewConfig">
     <option name="metadata">
       <MTProjectMetadataState>
+<<<<<<< HEAD
         <option name="userId" value="-7b74b9c0:19a6d41ca6a:-7ffd" />
+=======
+        <option name="userId" value="-1462a3c0:19a6d44f49a:-7ffd" />
+>>>>>>> refs/remotes/origin/main
       </MTProjectMetadataState>
     </option>
   </component>
