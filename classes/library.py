@@ -22,10 +22,10 @@ class Library:
             print("the book is already borrowed")
 
     @staticmethod
-    def return_book(user, book_isbn, book):
-        if book_isbn in user.borrowed_books:
+    def return_book(user, book):
+        if book.book_isbn in user.borrowed_books:
             book.is_available = True
-            user.borrowed_books.remove(book_isbn)
+            user.borrowed_books.remove(book.book_isbn)
         else:
             print("you didn't have this book")
 
