@@ -1,3 +1,5 @@
+
+
 class Library:
     def __init__(self):
         self.books = {}
@@ -38,11 +40,18 @@ class Library:
         for book in self.books:
             if book.is_available:
                 available_book.append(book.isbn)
-        return available_book
+        if len(available_book) == 0:
+            return f"no books available"
+        else:
+            return available_book
 
     def search_book(self, author):
         book_by_author = []
         for i in self.books:
             if i.author == author:
                 book_by_author.append(i.__str__())
-        return book_by_author
+        if len(book_by_author) > 0:
+            return book_by_author
+        else:
+            return "no books by this author"
+
