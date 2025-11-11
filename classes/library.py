@@ -1,19 +1,15 @@
-from book import Book
-from user import User
-
-
 class Library:
     def __init__(self):
         self.books = {}
         self.users = {}
 
     def add_book(self, book):
-        self.books[book]= book.__str__()
+        self.books[book] = book.__str__()
 
     def add_user(self, user):
         self.users[user] = user.__str__()
 
-    def borrow_book(self,user,book):
+    def borrow_book(self, user, book):
         if user not in self.users:
             print("the user doesn't exist")
         if book not in self.books:
@@ -23,8 +19,9 @@ class Library:
         else:
             user.borrowed_books.append(book.isbn)
             book.is_available = False
+            self.books[book] = book.__str__()
 
-    def return_book(self,user, book):
+    def return_book(self, user, book):
         if user not in self.users:
             print("the user doesn't exist")
         if book not in self.books:
@@ -32,8 +29,9 @@ class Library:
         if book.is_available:
             print("this book is already returned ")
         else:
-            user.borrowed_book.remove(book)
+            user.borrowed_books.remove(book)
             book.is_available = True
+            self.users[user] = user.__str__()
 
     def set_available_books(self):
         available_book = []
@@ -42,10 +40,9 @@ class Library:
                 available_book.append(book.isbn)
         return available_book
 
-    def search_book(self,author):
+    def search_book(self, author):
         book_by_author = []
         for i in self.books:
             if i.author == author:
                 book_by_author.append(i.__str__())
         return book_by_author
-
